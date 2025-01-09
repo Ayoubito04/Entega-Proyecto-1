@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;}
+    body{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://www.shutterstock.com/shutterstock/photos/2545367437/display_1500/stock-photo-red-cloth-waves-texture-background-stage-shot-in-table-top-for-christmas-background-2545367437.jpg);
+      background-repeat: no-repeat;background-size: cover;
+     
+    }
+    .Botones{
+    background-color: red;
+     border-radius: 15px;
+    
+    
+    }
+    .Botones ul{
+     display: flex;gap: 20px;list-style:none;padding: 20px;
+     justify-content: center;flex-wrap: wrap;
+     align-items: center;
+     padding: 20px;
+     flex: 1 1;
+     width: 50%;margin: 0 auto;border-radius: 20px;
+     
+    }
+
+    .Botones button{
+        padding: 20px;background-color: crimson;
+      border: none;border-radius: 15px;box-shadow: 10px 10px 5px;
+    }
+    
+    .Productos ul{
+        list-style:none;
+        display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+        grid-auto-rows: 400px;gap:40px;
+        transition:transform 0.8s ease;
+        padding: 20px;
+        overflow: hidden;
+      
+        
+      
+    }
+    .Productos li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(199, 53, 53);
+        border-radius: 10px;
+        background-color: transparent;
+        backdrop-filter:blur(20px) ;
+    }
+    .Productos ul :hover{
+        transform: scale(1.05,1.05);
+      
+    
+      
+        
+    
+
+    }
+    .Nombre a{
+        padding: 
+        20px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .precio{
+        color: white;
+        font-size: 20px;
+    }
+    
+    img{
+        width: 80%;background-size: cover;background-position: center;
+        border-radius: 30px;
+        min-width: 150px;
+    }
+    img:hover{
+        background-color: red;
+        box-shadow: 10px 10px 700px;
+    }
+    .comprar{
+        padding: 5px;border: none;border-radius: 20px;background-color: crimson;
+    }
+    .Ver_más{
+        display: flex;justify-content: center;
+        padding: 40px;background-color: red;border-radius: 15px;
+        margin-top: 30px;
+    }
+    .Ver_más button{
+       padding: 20px;padding: 20px;
+       border: none;border-radius: 15px;background-color: orange;
+       box-shadow: 10px 10px 5px;
+    }
+    button:hover{
+        background-color: aliceblue;
+    }
+    img:hover{
+        box-shadow: 10px 10px 400px;
+    }
+    @media(max-width:578px){
+       .Botones button{
+     padding: 15px; font-size: 10px;
+     
+       }
+       .Productos ul{
+    margin: 0 auto;
+       }
+       .Productos img{
+       width: 35%;
+       }
+       .Productos .Nombre{
+      font-size: 15px;
+       }
+       .Productos .precio{
+        font-size:9px;
+       }
+       .Productos button{
+        padding: 10px;
+       }
+       .Ver_más{
+        height: 200px;
+       }
+       .Ver_más button{
+        padding: 10px; height: 40px;
+       }
+      
+    }
